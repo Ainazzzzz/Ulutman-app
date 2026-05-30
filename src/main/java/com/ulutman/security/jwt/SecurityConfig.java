@@ -43,7 +43,8 @@ public class SecurityConfig {
                                 "https://ulutman-api.com",
                                 "https://www.ulutman-api.com",
                                 "https://api.ulutman-api.com",
-                                "https://development.dwusq5ewq6ygx.amplifyapp.com"
+                                "https://development.dwusq5ewq6ygx.amplifyapp.com",
+                                "https://ulutman.up.railway.app"
                         ));
                         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
                         config.setAllowedHeaders(List.of("*"));
