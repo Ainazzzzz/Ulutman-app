@@ -1,0 +1,64 @@
+spring:
+  application:
+    name: ulutman
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: never
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            redirect-uri: https://api.ulutman-api.com/login/oauth2/code/google
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+
+server:
+  port: 8081
+  ssl:
+    enabled: false
+  forward-headers-strategy: native
+
+springdoc:
+  swagger-ui:
+    url: /v3/api-docs
+
+jwt:
+  secret: ${JWT_SECRET}
+
+minio:
+  url: ${AWS_ENDPOINT_URL:https://fly.storage.tigris.dev}
+  access-key: ${AWS_ACCESS_KEY_ID:changeme}
+  secret-key: ${AWS_SECRET_ACCESS_KEY:changeme}
+  bucket: ${AWS_S3_BUCKET_NAME:ulutman-images}
+  region: ${AWS_DEFAULT_REGION:auto}

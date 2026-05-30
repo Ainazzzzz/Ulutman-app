@@ -1,0 +1,22 @@
+# Build
+target/
+*.jar
+*.war
+*.class
+
+# Environment / secrets
+.env
+*.env
+
+# Maven wrapper cache
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+.DS_Store
+
+# Logs
+*.log
+logs/
