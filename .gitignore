@@ -7,6 +7,7 @@ target/
 # Environment / secrets
 .env
 *.env
+serviceAccountKey.json
 
 # Maven wrapper cache
 .mvn/wrapper/maven-wrapper.jar
