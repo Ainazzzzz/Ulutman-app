@@ -89,7 +89,7 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .servers(List.of(
-                        new Server().url("https://api.ulutman-api.com")
+                        new Server().url("https://ulutman-app.up.railway.app")
                 ));
     }
 }
