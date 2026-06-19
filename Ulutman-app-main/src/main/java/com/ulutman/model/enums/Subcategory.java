@@ -1,0 +1,31 @@
+package com.ulutman.model.enums;
+
+public enum Subcategory {
+    SaleOfCar,
+    RentOfCar,
+    DailyRent,
+    LongTermRent,
+    PartTime,
+    FullTime,
+    House,
+    Apartment,
+    PartOfLand,
+    Space,
+    I_RentRoom,
+    I_RentBed,
+    I_RenApartment,
+    RentRoom,
+    RentBed,
+    RentApartment,
+    RentOffice,
+    Clothes,
+    HouseAppliances,
+    Electronics,
+    MEDICAL,
+    LEGAL,
+    BEAUTY,
+    AIRTICKET,
+    TAXIANDTRACK,
+    REPAIR,
+    DIFFERENT;
+}
