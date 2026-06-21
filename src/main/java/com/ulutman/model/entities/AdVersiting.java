@@ -22,7 +22,8 @@ public class AdVersiting {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    String imagePath;
+    @Column(length = 5000)
+    private String imagePath;
 
     private boolean active;
 

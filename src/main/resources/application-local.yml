@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/ulutman
-    username: ulutmanuser
-    password: localpassword
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: ulutman
 
 
 jwt:
@@ -10,7 +10,7 @@ jwt:
 
 minio:
   url: https://fly.storage.tigris.dev
-  access-key: your_aws_access_key_id
-  secret-key: your_aws_secret_access_key
+  access-key: tid_dT_HHHrvCoE_FTBxQ_iuEuSNDoRceWarFoOLjSSvTmoGZQmqYh
+  secret-key: tsec_C-_2OI2PCNp7VA--uptW+tSOfvrb6ua_77e7VagQ-arXC+lv-2JAbLlJV1fp9F_z+K6q_a
   bucket: ulutman-images
   region: auto

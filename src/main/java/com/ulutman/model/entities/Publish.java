@@ -87,8 +87,9 @@ public class Publish {
 
     @ElementCollection
     @CollectionTable(name = "publish_images")
-    @Column(name = "image")
+    @Column(name = "image", length = 5000)
     private List<String> images;
+
 
     @Column(name = "create_date")
     private LocalDate createDate;

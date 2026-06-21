@@ -32,8 +32,10 @@ public class AdVersitingService {
     @Autowired
     private MinioService minioService;
 
-    private static final String ADMIN_CHAT_ID = "6640338760";
-    private static final String TELEGRAM_BOT_TOKEN = "7721979760:AAGc8x9AXc5auPzVZX8ajUQjJvXAgNpK6_g";
+    // private static final String ADMIN_CHAT_ID = "6640338760";
+    // private static final String TELEGRAM_BOT_TOKEN = "7721979760:AAGc8x9AXc5auPzVZX8ajUQjJvXAgNpK6_g";
+    private static final String ADMIN_CHAT_ID = "7825590787";
+    private static final String TELEGRAM_BOT_TOKEN = "8916468491:AAGZbYzNTZxBaqayYwl5_fYN2wYsa7BAD6s";
 
     @Autowired
     public AdVersitingService(AdVersitingRepository adVersitingRepository, UserRepository userRepository, MailingService mailingService) throws IOException {
